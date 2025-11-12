@@ -1,0 +1,16 @@
+name: InySMPLobby
+version: ${version} # 會在編譯時被替換，手動製作請填如 1.0.0
+main: tw.inysmp.inysmplobby.InySMPLobby
+api-version: 1.21
+authors: [InySMP | InySMP]
+description: A custom lobby and teleportation management plugin for InySMP.
+
+commands:
+  lobby:
+    description: Teleports you to the main lobby.
+    usage: /lobby
+    aliases: [l, hub]
+  teleportmenu:
+    description: Opens the server selection GUI.
+    usage: /teleportmenu
+    permission: inysmplobby.menu

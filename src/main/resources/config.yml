@@ -1,0 +1,45 @@
+
+
+version: ${version}
+
+# 大廳的傳送座標設定
+lobby-location:
+  world: world # 世界名稱
+  x: 0.5
+  y: 64.0
+  z: 0.5
+  yaw: 0.0
+  pitch: 0.0
+
+# 是否啟用第一次加入伺服器時強制傳送到大廳的功能 (功能 2)
+teleport-on-first-join: true
+
+# GUI 菜單標題 (功能 3)
+gui-title: "§8伺服器選擇菜單"
+
+# 菜單物品設定 (使用指南針開啟 GUI)
+menu-item:
+  enabled: true
+  material: COMPASS
+  name: "§b§l伺服器傳送指南針"
+  lore:
+    - "§7右鍵點擊開啟伺服器選單"
+  slot: 0 # 玩家快捷列的第一格
+
+# GUI 菜單中的傳送點設定
+teleport-options:
+  survival:
+    item: DIAMOND_SWORD
+    name: "§a§l生存世界"
+    lore:
+      - "§7點擊傳送到主生存世界。"
+    command: "server survival" # BungeeCord 指令
+    slot: 10
+
+  skyblock:
+    item: GRASS_BLOCK
+    name: "§6§l空島世界"
+    lore:
+      - "§7點擊傳送到空島模式。"
+    command: "server skyblock"
+    slot: 12

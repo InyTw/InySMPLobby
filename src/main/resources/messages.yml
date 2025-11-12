@@ -1,0 +1,8 @@
+# 傳送相關訊息
+teleport-to-lobby: "§a已將您傳送到大廳！"
+teleport-on-first-join: "§a歡迎來到 InySMP！您已被傳送到大廳。"
+lobby-location-not-set: "§c大廳位置尚未設定，請聯繫管理員！"
+no-permission: "§c您沒有權限執行此操作。"
+
+# GUI 相關訊息
+gui-opened: "§a已開啟伺服器傳送菜單。"
