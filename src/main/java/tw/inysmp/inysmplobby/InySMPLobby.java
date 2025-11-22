@@ -34,9 +34,7 @@ public final class InySMPLobby extends JavaPlugin {
     @Override
     public void onEnable() {
         instance = this;
-        
-        // 請替換成您的 GitHub 資訊
-        this.updateChecker = new UpdateChecker(this, "InySMP", "InySMPLobby");
+
         sendConsole("&6[&bIny&aSMP&eLobby&6] &2&lThe Plugin is loading now ... ");
 
         this.saveDefaultConfig();
@@ -51,7 +49,6 @@ public final class InySMPLobby extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new PlayerEventListener(), this);
         getServer().getPluginManager().registerEvents(new GuiListener(), this);
 
-        updateChecker.notifyUpdate(null);
 
         sendConsole("&6[&bIny&aSMP&eLobby&6] &ev" + getDescription().getVersion() + " &a已啟動！");
     }
