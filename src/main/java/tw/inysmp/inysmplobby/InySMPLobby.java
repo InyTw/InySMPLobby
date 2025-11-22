@@ -11,7 +11,6 @@ import tw.inysmp.inysmplobby.commands.MenuCommand;
 import tw.inysmp.inysmplobby.commands.InySMPLobbyCommand;
 import tw.inysmp.inysmplobby.listeners.GuiListener;
 import tw.inysmp.inysmplobby.listeners.PlayerEventListener;
-import tw.inysmp.inysmplobby.utility.UpdateChecker;
 
 import java.io.File;
 import java.io.IOException;
@@ -28,11 +27,9 @@ public final class InySMPLobby extends JavaPlugin {
     private File adminFile;
     private FileConfiguration adminConfig; 
     
-    // 新增：Waypoints 相關欄位
     private File waypointsFile; 
     private FileConfiguration waypointsConfig; 
 
-    private UpdateChecker updateChecker;
 
     @Override
     public void onEnable() {
@@ -161,10 +158,6 @@ public final class InySMPLobby extends JavaPlugin {
 
     public String getPluginPrefix() {
         return pluginPrefix;
-    }
-
-    public UpdateChecker getUpdateChecker() {
-        return updateChecker;
     }
     
     // 輔助 reload
