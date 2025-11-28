@@ -1,11 +1,6 @@
-# InySMPLobby waypoints.yml
-#
-# 此檔案用於儲存所有自定義的傳送點 (Waypoint)。
-# 傳送點透過指令 /inysmplobby set <名稱> 設定，並在 /menu 菜單中顯示。
+# usage: /inysmplobby set <place_name>
 
 points:
-  # 範例傳送點：一個名為 'parkour' 的點
-  # 您可以刪除此範例或直接用指令覆蓋它。
   parkour:
     world: world
     x: 100.5
